@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Krishna Sharma</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'DM Sans',sans-serif;
+background:#060610;
+color:white;
+}
+
+nav{
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid rgba(255,255,255,0.08);
+background:#0d0d1f;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+font-family:'Syne',sans-serif;
+color:#7c5af6;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.section{
+padding:120px 60px;
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+font-size:70px;
+font-family:'Syne',sans-serif;
+margin-bottom:20px;
+}
+
+.title span{
+color:#7c5af6;
+}
+
+.desc{
+font-size:18px;
+line-height:1.9;
+color:#b5b5c7;
+max-width:800px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111122;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#7c5af6;
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:15px;
+font-family:'Syne',sans-serif;
+}
+
+.card p{
+color:#b5b5c7;
+line-height:1.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">K.</div>
+
+<ul class="nav-links">
+<li><a href="./index.html">Home</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="./skiils.html">Skills</a></li>
+<li><a href="./projects.html">Projects</a></li>
+<li><a href="./contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section class="section">
+
+<h1 class="title">About <span>Me</span></h1>
+
+<p class="desc">
+I'm Krishna Sharma, a passionate Frontend Developer and Creative Designer who loves building modern websites and digital experiences.
+I focus on clean UI, responsive layouts, animations and performance optimization.
+My goal is to create websites that not only look beautiful but also feel smooth and interactive.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Experience</h3>
+<p>
+Worked on multiple portfolio websites, landing pages and creative UI projects using HTML, CSS and JavaScript.
+</p>
+</div>
+
+<div class="card">
+<h3>Creative Vision</h3>
+<p>
+I enjoy creating modern dark themed interfaces with cinematic animations and premium user experiences.
+</p>
+</div>
+
+<div class="card">
+<h3>Future Goal</h3>
+<p>
+My aim is to become a high-level full-stack developer and build impactful digital products for people worldwide.
+</p>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
