@@ -108,101 +108,135 @@
         }
 
         .backboard {
-    width: 700px;
-    margin: auto;
-    margin-top: 80px;
-    background: #111827;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 2px solid rgba(255,255,255,0.08);
-    box-shadow: 0 0 30px rgba(124, 90, 246, 0.4);
-    animation: popup 0.4s ease;
-}
+            width: 700px;
+            margin: auto;
+            margin-top: 80px;
+            background: #111827;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 30px rgba(124, 90, 246, 0.4);
+            animation: popup 0.4s ease;
+        }
 
-/* Modal background blur */
-.modal {
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(6px);
-}
+        /* Modal background blur */
+        .modal {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(6px);
+        }
 
-/* Remove default bootstrap background */
-.modal-content {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-}
+        /* Remove default bootstrap background */
+        .modal-content {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
 
-/* Image style */
-.modal-body {
-    padding: 10px;
-    text-align: center;
-}
+        /* Image style */
+        .modal-body {
+            padding: 10px;
+            text-align: center;
+        }
 
-.modal-body img {
-    width: 100%;
-    border-radius: 15px;
-    transition: 0.3s;
-}
+        .modal-body img {
+            width: 100%;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
 
-.modal-body img:hover {
-    transform: scale(1.02);
-}
+        .modal-body img:hover {
+            transform: scale(1.02);
+        }
 
-/* Footer */
-.modal-footer {
-    border-top: none;
-    text-align: center;
-    padding: 15px;
-}
+        /* Footer */
+        .modal-footer {
+            border-top: none;
+            text-align: center;
+            padding: 15px;
+        }
 
-/* Close button */
-.modal-footer .btn {
-    background: #7c5af6;
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: 0.3s;
-}
+        /* Close button */
+        .modal-footer .btn {
+            background: #7c5af6;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
 
-.modal-footer .btn:hover {
-    background: #9b7fff;
-    transform: translateY(-2px);
-}
+        .modal-footer .btn:hover {
+            background: #9b7fff;
+            transform: translateY(-2px);
+        }
 
-/* HTML button */
-.btn-info {
-    margin-top: 150px;
-    background: linear-gradient(135deg, #7c5af6, #9b7fff);
-    border: none;
-    padding: 35px 88px;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+        /* HTML button */
+        .btn-info {
+            margin-top: 150px;
+            background: linear-gradient(135deg, #7c5af6, #9b7fff);
+            border: none;
+            padding: 35px 88px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-.btn-info:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(124, 90, 246, 0.5);
-}
+        .btn-info:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(124, 90, 246, 0.5);
+        }
 
-/* Animation */
-@keyframes popup {
-    from {
-        transform: scale(0.7);
-        opacity: 0;
+        /* Animation */
+        @keyframes popup {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .all {
+            display: flex;
+            gap: 1.6%;
+            margin-left: 5%;
+        }
+        .section {
+      padding: 100px 60px;
     }
-    to {
-        transform: scale(1);
-        opacity: 1;
+
+    h1 {
+      font-size: 70px;
+      margin-bottom: 50px;
     }
-}
-.all{display: flex;
-gap: 1.6%;
-margin-left: 5%;}
-        
+
+    h1 span {
+      color: #7c5af6;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .project {
+      background: #111122;
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-10px);
+      border-color: #7c5af6;
+    }
     </style>
 
 
@@ -226,78 +260,96 @@ margin-left: 5%;}
             </svg>
         </a>
     </nav>
-    <div class="all">
-    <div class="container">
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-            data-target="#html">HTML</button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="html" role="dialog">
-            <div class="modal-dialog">
+       
+      
+       
+ <section class="section">
 
-                <!-- Modal content-->
-                <div class="modal-content backboard">
-                    <div class="modal-body">
-                        <img src="./img/HTML.jpg" width="670px" alt="html" />
+    <h1>My <span>Certificats</span></h1>
+
+    <div class="projects">
+
+      <div class="project">
+         <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#html">HTML</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="html" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content backboard">
+                        <div class="modal-body">
+                            <img src="./img/HTML.jpg" width="670px" alt="html" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+
                 </div>
-
             </div>
+
         </div>
+      </div>
+
+      <div class="project">
+         <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#css">CSS</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="css" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content backboard">
+                        <div class="modal-body">
+                            <img src="./img/CSS.jpg" width="670px" alt="css" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="project">
+         <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                data-target="#java">JavaScript</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="java" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content backboard">
+                        <div class="modal-body">
+                            <img src="./img/JAVA.jpg" width="670px" alt="js" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+      </div>
 
     </div>
-     <div class="container">
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-            data-target="#css">CSS</button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="css" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content backboard">
-                    <div class="modal-body">
-                        <img src="./img/CSS.jpg" width="670px" alt="css" />
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-     <div class="container">
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
-            data-target="#java">JavaScript</button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="java" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content backboard">
-                    <div class="modal-body">
-                        <img src="./img/JAVA.jpg" width="670px" alt="js" />
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-
+  </section>
 </body>
 
 </html>
