@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills - Krishna Sharma</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Krishna Sharma</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
 
-<style>
- :root {
+  <style>
+    :root {
       --purple: #7c5af6;
       --purple-light: #9b7fff;
       --bg: #060610;
       --bg2: #0d0d1f;
       --white: #ffffff;
       --muted: #a0a0b8;
-      --border: rgba(255,255,255,0.08);
+      --border: rgba(255, 255, 255, 0.08);
     }
-body{
-margin:0;
-background:#060610;
-font-family:'DM Sans',sans-serif;
-color:white;
-}
 
-.section{
-padding:100px 60px;
-}
+    body {
+      margin: 0;
+      background: #060610;
+      font-family: 'DM Sans', sans-serif;
+      color: white;
+    }
 
-h1{
-font-size:70px;
-font-family:'Syne',sans-serif;
-margin-bottom:50px;
-}
+    .section {
+      padding: 100px 60px;
+    }
 
-h1 span{
-color:#7c5af6;
-}
+    h1 {
+      font-size: 70px;
+      font-family: 'Syne', sans-serif;
+      margin-bottom: 50px;
+    }
 
-.skill{
-margin-bottom:35px;
-}
+    h1 span {
+      color: #7c5af6;
+    }
 
-.skill-title{
-display:flex;
-justify-content:space-between;
-margin-bottom:10px;
-}
+    .skill {
+      margin-bottom: 35px;
+    }
 
-.bar{
-height:12px;
-background:#1a1a2f;
-border-radius:30px;
-overflow:hidden;
-}
+    .skill-title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
 
-.progress{
-height:100%;
-background:#7c5af6;
-border-radius:30px;
-}
-  nav {
+    .bar {
+      height: 12px;
+      background: #1a1a2f;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      background: #7c5af6;
+      border-radius: 30px;
+    }
+
+    nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 20px 60px;
-      background: rgba(6,6,16,0.7);
+      background: rgba(6, 6, 16, 0.7);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
@@ -101,13 +107,16 @@ border-radius:30px;
     .nav-links a.active::after {
       content: '';
       display: block;
-      width: 5px; height: 5px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background: var(--purple);
       margin: 4px auto 0;
     }
 
-    .nav-links a:hover { color: var(--purple-light); }
+    .nav-links a:hover {
+      color: var(--purple-light);
+    }
 
     .btn-cv {
       display: flex;
@@ -126,77 +135,83 @@ border-radius:30px;
       transition: background 0.2s, border-color 0.2s;
     }
 
-    .btn-cv:hover { background: rgba(255,255,255,0.07); border-color: var(--purple); }
+    .btn-cv:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: var(--purple);
+    }
 
-    .btn-cv svg { width: 16px; height: 16px; }
-
-</style>
+    .btn-cv svg {
+      width: 16px;
+      height: 16px;
+    }
+  </style>
 </head>
 
 <body>
-    <nav>
-  <div class="logo">K.</div>
-  <ul class="nav-links">
-    <li><a href="#" class="active">Home</a></li>
-    <li><a href="./about.html">About</a></li>
-    <li><a href="./skiils.html">Skills</a></li>
-    <li><a href="./projects.html">Projects</a></li>
-    <li><a href="./contact.html">Contact</a></li>
-  </ul>
-  <a href="#" class="btn-cv">
-    Download CV
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 16l-4-4h3V4h2v8h3l-4 4zM4 20h16" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
-</nav>
+  <nav>
+    <div class="logo">K.</div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./skiils.html">Skills</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <a href="#" class="btn-cv">
+      Download CV
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 16l-4-4h3V4h2v8h3l-4 4zM4 20h16" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </nav>
 
 
-<section class="section">
+  <section class="section">
 
-<h1>My <span>Skills</span></h1>
+    <h1>My <span>Skills</span></h1>
 
-<div class="skill">
-<div class="skill-title">
-<span>HTML</span>
-<span>95%</span>
-</div>
-<div class="bar">
-<div class="progress" style="width:95%"></div>
-</div>
-</div>
+    <div class="skill">
+      <div class="skill-title">
+        <span>HTML</span>
+        <span>95%</span>
+      </div>
+      <div class="bar">
+        <div class="progress" style="width:95%"></div>
+      </div>
+    </div>
 
-<div class="skill">
-<div class="skill-title">
-<span>CSS</span>
-<span>90%</span>
-</div>
-<div class="bar">
-<div class="progress" style="width:90%"></div>
-</div>
-</div>
+    <div class="skill">
+      <div class="skill-title">
+        <span>CSS</span>
+        <span>90%</span>
+      </div>
+      <div class="bar">
+        <div class="progress" style="width:90%"></div>
+      </div>
+    </div>
 
-<div class="skill">
-<div class="skill-title">
-<span>JavaScript</span>
-<span>80%</span>
-</div>
-<div class="bar">
-<div class="progress" style="width:80%"></div>
-</div>
-</div>
+    <div class="skill">
+      <div class="skill-title">
+        <span>JavaScript</span>
+        <span>80%</span>
+      </div>
+      <div class="bar">
+        <div class="progress" style="width:80%"></div>
+      </div>
+    </div>
 
-<div class="skill">
-<div class="skill-title">
-<span>UI/UX Design</span>
-<span>85%</span>
-</div>
-<div class="bar">
-<div class="progress" style="width:85%"></div>
-</div>
-</div>
+    <div class="skill">
+      <div class="skill-title">
+        <span>UI/UX Design</span>
+        <span>85%</span>
+      </div>
+      <div class="bar">
+        <div class="progress" style="width:85%"></div>
+      </div>
+    </div>
 
-</section>
+  </section>
 
 </body>
+
 </html>

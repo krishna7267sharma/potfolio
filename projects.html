@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects - Krishna Sharma</title>
 
-<style>
- :root {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Krishna Sharma</title>
+
+  <style>
+    :root {
       --purple: #7c5af6;
       --purple-light: #9b7fff;
       --bg: #060610;
       --bg2: #0d0d1f;
       --white: #ffffff;
       --muted: #a0a0b8;
-      --border: rgba(255,255,255,0.08);
+      --border: rgba(255, 255, 255, 0.08);
     }
-body{
-margin:0;
-background:#060610;
-font-family:Arial;
-color:white;
-}
 
-.section{
-padding:100px 60px;
-}
+    body {
+      margin: 0;
+      background: #060610;
+      font-family: Arial;
+      color: white;
+    }
 
-h1{
-font-size:70px;
-margin-bottom:50px;
-}
+    .section {
+      padding: 100px 60px;
+    }
 
-h1 span{
-color:#7c5af6;
-}
+    h1 {
+      font-size: 70px;
+      margin-bottom: 50px;
+    }
 
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
+    h1 span {
+      color: #7c5af6;
+    }
 
-.project{
-background:#111122;
-padding:30px;
-border-radius:20px;
-border:1px solid rgba(255,255,255,0.08);
-transition:0.3s;
-}
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
 
-.project:hover{
-transform:translateY(-10px);
-border-color:#7c5af6;
-}
+    .project {
+      background: #111122;
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: 0.3s;
+    }
 
-.project h2{
-margin-bottom:15px;
-}
+    .project:hover {
+      transform: translateY(-10px);
+      border-color: #7c5af6;
+    }
 
-.project p{
-color:#b5b5c7;
-line-height:1.8;
-}
-  nav {
+    .project h2 {
+      margin-bottom: 15px;
+    }
+
+    .project p {
+      color: #b5b5c7;
+      line-height: 1.8;
+    }
+
+    nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 20px 60px;
-      background: rgba(6,6,16,0.7);
+      background: rgba(6, 6, 16, 0.7);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
@@ -103,13 +108,16 @@ line-height:1.8;
     .nav-links a.active::after {
       content: '';
       display: block;
-      width: 5px; height: 5px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background: var(--purple);
       margin: 4px auto 0;
     }
 
-    .nav-links a:hover { color: var(--purple-light); }
+    .nav-links a:hover {
+      color: var(--purple-light);
+    }
 
     .btn-cv {
       display: flex;
@@ -128,62 +136,67 @@ line-height:1.8;
       transition: background 0.2s, border-color 0.2s;
     }
 
-    .btn-cv:hover { background: rgba(255,255,255,0.07); border-color: var(--purple); }
+    .btn-cv:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: var(--purple);
+    }
 
-    .btn-cv svg { width: 16px; height: 16px; }
-
-
-</style>
+    .btn-cv svg {
+      width: 16px;
+      height: 16px;
+    }
+  </style>
 </head>
 
 <body>
-       <nav>
-  <div class="logo">K.</div>
-  <ul class="nav-links">
-    <li><a href="#" class="active">Home</a></li>
-    <li><a href="./about.html">About</a></li>
-    <li><a href="./skiils.html">Skills</a></li>
-    <li><a href="./projects.html">Projects</a></li>
-    <li><a href="./contact.html">Contact</a></li>
-  </ul>
-  <a href="#" class="btn-cv">
-    Download CV
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 16l-4-4h3V4h2v8h3l-4 4zM4 20h16" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
-</nav>
+  <nav>
+    <div class="logo">K.</div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./skiils.html">Skills</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <a href="#" class="btn-cv">
+      Download CV
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 16l-4-4h3V4h2v8h3l-4 4zM4 20h16" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </nav>
 
-<section class="section">
+  <section class="section">
 
-<h1>My <span>Projects</span></h1>
+    <h1>My <span>Projects</span></h1>
 
-<div class="projects">
+    <div class="projects">
 
-<div class="project">
-<h2>Portfolio Website</h2>
-<p>
-Modern animated portfolio website with responsive design and smooth user experience.
-</p>
-</div>
+      <div class="project">
+        <h2>Portfolio Website</h2>
+        <p>
+          Modern animated portfolio website with responsive design and smooth user experience.
+        </p>
+      </div>
 
-<div class="project">
-<h2>Landing Page</h2>
-<p>
-Creative business landing page with modern UI and conversion focused sections.
-</p>
-</div>
+      <div class="project">
+        <h2>Landing Page</h2>
+        <p>
+          Creative business landing page with modern UI and conversion focused sections.
+        </p>
+      </div>
 
-<div class="project">
-<h2>Dashboard UI</h2>
-<p>
-Clean admin dashboard interface designed with dark modern aesthetics.
-</p>
-</div>
+      <div class="project">
+        <h2>Dashboard UI</h2>
+        <p>
+          Clean admin dashboard interface designed with dark modern aesthetics.
+        </p>
+      </div>
 
-</div>
+    </div>
 
-</section>
+  </section>
 
 </body>
+
 </html>

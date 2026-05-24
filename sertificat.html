@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        :root {
+            --purple: #7c5af6;
+            --purple-light: #9b7fff;
+            --bg: #060610;
+            --bg2: #0d0d1f;
+            --white: #ffffff;
+            --muted: #a0a0b8;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            margin: 0;
+            background: #060610;
+            font-family: 'DM Sans', sans-serif;
+            color: white;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 60px;
+            background: rgba(6, 6, 16, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: 'Syne', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--purple);
+            letter-spacing: -1px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: 15px;
+            font-weight: 400;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--purple);
+            margin: 4px auto 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--purple-light);
+        }
+
+        .btn-cv {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 22px;
+            border: 1.5px solid var(--white);
+            border-radius: 8px;
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .btn-cv:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: var(--purple);
+        }
+
+        .btn-cv svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .backboard {
+    width: 700px;
+    margin: auto;
+    margin-top: 80px;
+    background: #111827;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 30px rgba(124, 90, 246, 0.4);
+    animation: popup 0.4s ease;
+}
+
+/* Modal background blur */
+.modal {
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(6px);
+}
+
+/* Remove default bootstrap background */
+.modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Image style */
+.modal-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.modal-body img:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+.modal-footer {
+    border-top: none;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Close button */
+.modal-footer .btn {
+    background: #7c5af6;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.modal-footer .btn:hover {
+    background: #9b7fff;
+    transform: translateY(-2px);
+}
+
+/* HTML button */
+.btn-info {
+    margin-top: 150px;
+    background: linear-gradient(135deg, #7c5af6, #9b7fff);
+    border: none;
+    padding: 35px 88px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(124, 90, 246, 0.5);
+}
+
+/* Animation */
+@keyframes popup {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.all{display: flex;
+gap: 1.6%;
+margin-left: 5%;}
+        
+    </style>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">K.</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./skiils.html">Skills</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./sertificat.html">Sertificat</a></li>
+        </ul>
+        <a href="#" class="btn-cv">
+            Download CV
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 16l-4-4h3V4h2v8h3l-4 4zM4 20h16" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+    </nav>
+    <div class="all">
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+            data-target="#html">HTML</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="html" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content backboard">
+                    <div class="modal-body">
+                        <img src="./img/HTML.jpg" width="670px" alt="html" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+     <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+            data-target="#css">CSS</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="css" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content backboard">
+                    <div class="modal-body">
+                        <img src="./img/CSS.jpg" width="670px" alt="css" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+     <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+            data-target="#java">JavaScript</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="java" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content backboard">
+                    <div class="modal-body">
+                        <img src="./img/JAVA.jpg" width="670px" alt="js" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>

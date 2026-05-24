@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Krishna Sharma</title>
 
-<style>
- :root {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Krishna Sharma</title>
+
+  <style>
+    :root {
       --purple: #7c5af6;
       --purple-light: #9b7fff;
       --bg: #060610;
       --bg2: #0d0d1f;
       --white: #ffffff;
       --muted: #a0a0b8;
-      --border: rgba(255,255,255,0.08);
+      --border: rgba(255, 255, 255, 0.08);
     }
-body{
-margin:0;
-background:#060610;
-font-family:Arial;
-color:white;
-}
 
-.section{
-padding:100px 60px;
-max-width:700px;
-margin:auto;
-}
-  nav {
+    body {
+      margin: 0;
+      background: #060610;
+      font-family: Arial;
+      color: white;
+    }
+
+    .section {
+      padding: 100px 60px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 20px 60px;
-      background: rgba(6,6,16,0.7);
+      background: rgba(6, 6, 16, 0.7);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
@@ -68,13 +73,16 @@ margin:auto;
     .nav-links a.active::after {
       content: '';
       display: block;
-      width: 5px; height: 5px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background: var(--purple);
       margin: 4px auto 0;
     }
 
-    .nav-links a:hover { color: var(--purple-light); }
+    .nav-links a:hover {
+      color: var(--purple-light);
+    }
 
     .btn-cv {
       display: flex;
@@ -93,100 +101,107 @@ margin:auto;
       transition: background 0.2s, border-color 0.2s;
     }
 
-    .btn-cv:hover { background: rgba(255,255,255,0.07); border-color: var(--purple); }
+    .btn-cv:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: var(--purple);
+    }
 
-    .btn-cv svg { width: 16px; height: 16px; }
+    .btn-cv svg {
+      width: 16px;
+      height: 16px;
+    }
 
 
-h1{
-font-size:70px;
-margin-bottom:20px;
-}
+    h1 {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
 
-h1 span{
-color:#7c5af6;
-}
+    h1 span {
+      color: #7c5af6;
+    }
 
-p{
-color:#b5b5c7;
-margin-bottom:40px;
-line-height:1.8;
-}
+    p {
+      color: #b5b5c7;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
 
-form{
-display:flex;
-flex-direction:column;
-gap:20px;
-}
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
-input,textarea{
-padding:18px;
-background:#111122;
-border:1px solid rgba(255,255,255,0.08);
-border-radius:12px;
-color:white;
-font-size:16px;
-outline:none;
-}
+    input,
+    textarea {
+      padding: 18px;
+      background: #111122;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
 
-button{
-padding:16px;
-background:#7c5af6;
-border:none;
-border-radius:12px;
-color:white;
-font-size:16px;
-cursor:pointer;
-transition:0.3s;
-}
+    button {
+      padding: 16px;
+      background: #7c5af6;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-button:hover{
-background:#9b7fff;
-}
-
-</style>
+    button:hover {
+      background: #9b7fff;
+    }
+  </style>
 </head>
 
 <body>
-       <nav>
-  <div class="logo">K.</div>
-  <ul class="nav-links">
-    <li><a href="#" class="active">Home</a></li>
-    <li><a href="./about.html">About</a></li>
-    <li><a href="./skiils.html">Skills</a></li>
-    <li><a href="./projects.html">Projects</a></li>
-    <li><a href="./contact.html">Contact</a></li>
-  </ul>
-  <a href="#" class="btn-cv">
-    Download CV
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 16l-4-4h3V4h2v8h3l-4 4zM4 20h16" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
-</nav>
+  <nav>
+    <div class="logo">K.</div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./skiils.html">Skills</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <a href="#" class="btn-cv">
+      Download CV
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 16l-4-4h3V4h2v8h3l-4 4zM4 20h16" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </nav>
 
-<section class="section">
+  <section class="section">
 
-<h1>Contact <span>Me</span></h1>
+    <h1>Contact <span>Me</span></h1>
 
-<p>
-Have a project idea or want to work together?
-Send me a message and let's create something amazing.
-</p>
+    <p>
+      Have a project idea or want to work together?
+      Send me a message and let's create something amazing.
+    </p>
 
-<form>
+    <form>
 
-<input type="text" placeholder="Your Name">
+      <input type="text" placeholder="Your Name">
 
-<input type="email" placeholder="Your Email">
+      <input type="email" placeholder="Your Email">
 
-<textarea rows="6" placeholder="Your Message"></textarea>
+      <textarea rows="6" placeholder="Your Message"></textarea>
 
-<button>Send Message</button>
+      <button>Send Message</button>
 
-</form>
+    </form>
 
-</section>
+  </section>
 
 </body>
+
 </html>
